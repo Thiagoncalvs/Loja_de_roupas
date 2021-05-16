@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Fermow";
+    src: url("../fonts/the_braggest/The Braggest_Demo.otf") format('opentype'), url("../fonts/the_braggest/The Braggest_Demo.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1#tlogo{
+    font-family: 'Fermow', Times, serif;
+    font-size: 5em;
+    font-weight: normal;
+}
+ul.menu{
+    list-style: none;
+    float: left;
+    background: orange;
+    
+}
+.menu li{
+    position: relative;
+    float: left;
+    top: 30px;
+    padding: 0 15px 0 0;
+    background: red;
+}
+.menu li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 0.88em;
+    padding: 5px;
+    display: block;
+    background: blue;
+}
+.menu li a:hover{
+    color: red;
+}
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0);
+    display: none;
+    background: green;
+}
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+}
+.menu li ul li{
+    display: block;
+    width: 150px;
+}
