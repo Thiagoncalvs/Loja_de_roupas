@@ -1,5 +1,6 @@
 <!--
-    A fonte usada no site é a The Braggest porém o ideal era a Portfield Alt que é pago.
+    A fonte usada na LOGO é a The Braggest porém o ideal era a Portfield Alt que é pago.
+    A fonte usada no site é a OPTITomasoBold-Extended a ideal era a Moister Regular.
     O site inspiração é o burberry - https://us.burberry.com/
     A marca usada será a FERMOW`S CONCEPT - https://www.instagram.com/fermowsconcept/
     file:///home/thiago-s-goncalves/Documents/ThiagoncalvsPC/clothing-store/index.html
@@ -9,66 +10,166 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fermow's Official | Amapaense Fashion & Beauty</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <a id="tlogo">Fermow's</a>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#">clothing</a>
-                    <ul>
-                        <li><a href="#">vestidos</a></li>
-                        <li><a href="#">macacões</a></li>
-                        <li><a href="#">calças</a></li>
-                        <li><a href="#">shorts</a></li>
-                        <li><a href="#">conjuntos</a></li>
-                        <li><a href="#">blusas</a></li>
-                        <li><a href="#">camisas</a></li>
-                        <li><a href="#">saias</a></li>
-                        <li><a href="#">body</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">bags</a></li>
-                <li><a href="#">scarves</a></li>
-                <li><a href="#">accessories</a></li>
-                <li><a href="#">shoes</a></li>
-                <li><a href="#">make-up</a></li>
-                <li><a href="#">gifts</a></li>
-                <li><a href="#">for you</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#">pesq</a>
-                    <ul>
-                        <input type="search" name="" id="">
-                    </ul>
-                </li>
-                <li><button onclick="document.getElementById('id01').style.display='block'"style='width:auto;'>login</button></li>
-                <li>
-                    <a href="#">icon-bag</a>
-                    <ul>
-                        <li><a href="#">your bag is empty</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="sectionone">
-        <article>
-            <div class="slideimg">
-                <a href="#">img</a>
+    <div class="estrutura-geral-grid">
+        <header class="header-grid"><!-----------------------------------------ESTRUTURA DO HEADER-->
+            <a href="#" id="tlogo">Fermow's</a>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">clothing</a>
+                        <ul>
+                            <li><a href="#">vestidos</a></li>
+                            <li><a href="#">macacões</a></li>
+                            <li><a href="#">calças</a></li>
+                            <li><a href="#">shorts</a></li>
+                            <li><a href="#">conjuntos</a></li>
+                            <li><a href="#">blusas</a></li>
+                            <li><a href="#">camisas</a></li>
+                            <li><a href="#">saias</a></li>
+                            <li><a href="#">body</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">bags</a></li>
+                    <li><a href="#">scarves</a></li>
+                    <li><a href="#">accessories</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">make-up</a></li>
+                    <li><a href="#">gifts</a></li>
+                    <li><a href="#">for you</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">pesq</a>
+                        <ul>
+                            <input type="search" name="" id="" placeholder="search">
+                        </ul>
+                    </li>
+                    <li><button onclick="document.getElementById('id01').style.display='block'"style='width:auto;'>login</button></li>
+                    <li>
+                        <a href="#">icon-bag</a>
+                        <ul>
+                            <li><a href="#">your bag is empty</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section-main"><!--------------------------------------ESTRUTURA DA SECTION-->
+            <section class="section1">
+                <div id="slide1">
+                    <div><a href="#">Roupa tal</a></div>
+                </div>
+            </section>
+            <section class="section2">
+                <div id="slide2">
+                    <div><a href="#">Roupa tal</a></div>
+                </div>
+            </section>
+            <section class="section3">
+                <div id="foto1">
+                    <div><a href="#">Roupa tal</a></div>
+                </div>
+            </section>
+            <section class="section4">
+                <div id="slide3">
+                    <div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">women</a></li>
+                                <li><a href="#">bags</a></li>
+                                <li><a href="#">men</a></li>
+                                <li><a href="#">coats</a></li>
+                                <li><a href="#">shoes</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer class="footer-grid"><!-----------------------------------------ESTRUTURA DO FOOTER-->
+            <div id="f1">
+                <h1>Email Sign-Up</h1>
+                <p>Sign up for email updates on the latest Burberry collections, campaigns and videos.</p>
+                <input type="email" name="email" id="email" pattern=".+@globex.com" size="30" placeholder="sophie@example.com" required>
             </div>
-        </article>
-        <article>
-            <aside></aside>
-        </article>
-    </section>
-    <footer></footer>
+            <div id="f2">
+                <nav>
+                    <li><a href="#">store locator</a></li>
+                    <li><a href="#">download our app</a></li>
+                </nav>
+            </div>
+            <div id="f3">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">costumer service</a>
+                            <ul>
+                                <li><a href="#">contact us</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">ordering and payment</a></li>
+                                <li><a href="#">returns</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">legal & cookies</a>
+                            <ul>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Accessibility Statement</a></li>
+                                <li><a href="#">Japan only- SCTL indications</a></li>
+                                <li><a href="#">Transparency in the Supply Chain and Modern Slavery Statements</a></li>
+                                <li><a href="#">Privacy Policy of Burberry Korea Limited. (Customer)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">do not sell my personal information</a></li>
+                        <li><a href="#">transparency in the supply chain and modern slavery statements</a></li>
+                        <li>
+                            <a href="#">follow us</a>
+                            <ul>
+                                <li><a href="#">facebook</a></li>
+                                <li><a href="#">twitter</a></li>
+                                <li><a href="#">instagram</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">our company</a>
+                            <ul>
+                                <li><a href="#">Our History</a></li>
+                                <li><a href="#">Burberry Group Plc</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Corporate Responsibility</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="f4">
+                <nav>
+                    <ul>
+                        <li><a href="#">language</a></li>
+                        <li><a href="#">english</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">shipping to</a></li>
+                        <li><a href="#">united states ($)</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-wide" id="footer2">
+                <p>If you are using a screen-reader and are having problems using this website, please call +1 877 217 4085 or contact us for assistance.</p>
+                <p>© 2021 Wikilore Development Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
