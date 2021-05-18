@@ -13,13 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fermow's Official | Amapaense Fashion & Beauty</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="estrutura-geral-grid">
         <header class="header-grid"><!-----------------------------------------ESTRUTURA DO HEADER-->
-            <a href="#" id="tlogo">Fermow's</a>
+            <a href="#" class="tlogo">Fermow's</a>
             <nav>
-                <ul class="menu">
+                <ul class="menu1">
                     <li>
                         <a href="#">clothing</a>
                         <ul>
@@ -44,16 +45,16 @@
                 </ul>
             </nav>
             <nav>
-                <ul class="menu">
+                <ul class="menu2">
                     <li>
-                        <a href="#">pesq</a>
+                        <a href="#"><i class="fas fa-search"></i></a>
                         <ul>
-                            <input type="search" name="" id="" placeholder="search">
+                            <li><input type="search" name="" id="" placeholder="search"></li>
                         </ul>
                     </li>
-                    <li><button onclick="document.getElementById('id01').style.display='block'"style='width:auto;'>login</button></li>
+                    <li><a href="#"><i class="far fa-user"></i></a></li>
                     <li>
-                        <a href="#">icon-bag</a>
+                        <a href="#"><i class="fas fa-shopping-bag"></i></a>
                         <ul>
                             <li><a href="#">your bag is empty</a></li>
                         </ul>
@@ -63,22 +64,33 @@
         </header>
         <section class="section-main"><!--------------------------------------ESTRUTURA DA SECTION-->
             <section class="section1">
-                <div id="slide1">
-                    <div><a href="#">Roupa tal</a></div>
+                <div data-slide="slide1" class="slide1">
+                    <div class="slide-itens"><!--1920x1200-->
+                        <img src="./IMG/imgteste/1.jpg" alt="img0">
+                        <img src="./IMG/imgteste/2.jpg" alt="img1">
+                        <img src="./IMG/imgteste/3.jpg" alt="img2">
+                        <img src="./IMG/imgteste/4.jpg" alt="img3">
+                        <img src="./IMG/imgteste/5.jpg" alt="img4">
+                    </div>
+                    <nav class="slide-nav">
+                        <div class="slide-thumb"></div>
+                        <button class="slide-prev">prev</button>
+                        <button class="slide-next">next</button>
+                    </nav>
                 </div>
             </section>
             <section class="section2">
-                <div id="slide2">
+                <div data-slide="slide2" id="slide2">
                     <div><a href="#">Roupa tal</a></div>
                 </div>
             </section>
             <section class="section3">
-                <div id="foto1">
+                <div data-slide="slide3" id="slide3">
                     <div><a href="#">Roupa tal</a></div>
                 </div>
             </section>
             <section class="section4">
-                <div id="slide3">
+                <div data-slide="slide4" id="slide4">
                     <div>
                         <nav>
                             <ul>
@@ -97,8 +109,8 @@
             <div id="f1">
                 <div>
                     <h1>Email Sign-Up</h1>
-                    <p id="text-none-footer">Sign up for email updates on the latest Burberry collections, campaigns and videos.</p>
-                    <input type="email" name="email" id="email" pattern=".+@globex.com" size="30" placeholder="sophie@example.com" required>
+                    <p id="solo">Sign up for email updates on the latest Burberry collections, campaigns and videos.</p>
+                    <input type="email" name="email" id="email" pattern=".+@globex.com" size="auto" placeholder="email*" required>
                 </div>
             </div>
             <div id="f2">
@@ -114,7 +126,7 @@
                     <ul>
                         <div id="f3li">
                             <li>
-                            <a href="#">costumer service</a>
+                            <a href="#" class="solof3">costumer service</a>
                                 <ul>
                                     <li><a href="#">contact us</a></li>
                                     <li><a href="#">shipping</a></li>
@@ -125,7 +137,7 @@
                         </div>
                         <div id="f3li">
                             <li>
-                                <a href="#">legal & cookies</a>
+                                <a href="#" class="solof3">legal & cookies</a>
                                 <ul>
                                     <li><a href="#">Terms & Conditions</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
@@ -138,14 +150,14 @@
                             </li>
                         </div>
                         <div id="f3li">
-                            <li><a href="#" id="text-none-footer">do not sell my personal information</a></li>
+                            <li><a href="#" id="solo" class="solof3">Do Not Sell My Personal Information</a></li>
                         </div>
                         <div id="f3li">
-                            <li><a href="#" id="text-none-footer">transparency in the supply chain and modern slavery statements</a></li>
+                            <li><a href="#" id="solo" class="solof3">Transparency in the Supply Chain and Modern Slavery Statements</a></li>
                         </div>
                         <div id="f3li">
                             <li>
-                                <a href="#">follow us</a>
+                                <a href="#" class="solof3">follow us</a>
                                 <ul>
                                     <li><a href="#">facebook</a></li>
                                     <li><a href="#">twitter</a></li>
@@ -155,7 +167,7 @@
                         </div>
                         <div id="f3li">
                             <li>
-                                <a href="#">our company</a>
+                                <a href="#" class="solof3">our company</a>
                                 <ul>
                                     <li><a href="#">Our History</a></li>
                                     <li><a href="#">Burberry Group Plc</a></li>
@@ -172,11 +184,11 @@
             <div id="f4">
                 <nav>
                     <ul>
-                        <li><a href="#">language</a></li>
+                        <li><a href="#" id="atitle">language</a></li>
                         <li><a href="#">english</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">shipping to</a></li>
+                        <li><a href="#" id="atitle">shipping to</a></li>
                         <li><a href="#">united states ($)</a></li>
                     </ul>
                 </nav>
@@ -187,5 +199,6 @@
             </div>
         </footer>
     </div>
+    <script src="JS/funcionalidades.js"></script>
 </body>
 </html>
