@@ -5,6 +5,7 @@
     font-size: 0.8rem;
     font-family: 'FermowGeral', Times, serif;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 @font-face {
@@ -33,12 +34,16 @@
     align-items: center;
     font-family: 'FermowGeral', Times, serif;
 }
-a#tlogo{/*Configuração da logo*/
-    font-family: 'Fermow', Times, serif;
-    font-size: 7em;
-    font-weight: normal;
-    color: black;
-}
+
+/*CONFIGURAÇÃO LOGO*/
+                a#tlogo{
+                    font-family: 'Fermow', Times, serif;
+                    font-size: 7em;
+                    font-weight: normal;
+                    color: black;
+                    text-transform: capitalize;
+                }
+
 .header-grid nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +52,7 @@ a#tlogo{/*Configuração da logo*/
     display: block;
     padding: 5px;
     color: black;
-    font-size: 1.125em;
+    font-size: 0.8em;
 }
 .header-grid li ul{
     position: absolute;
@@ -70,43 +75,130 @@ a#tlogo{/*Configuração da logo*/
     background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6.5fr 1fr;
+    grid-template-rows: 6.5fr 70px;
     border-top: 1px solid rgb(80, 80, 80);
 }
 .col-wide{
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /*DEIXA OS DOIS ULTIMOS TEXT DO FOOTER NUMA COLUNA SÓ*/
 }
-.footer-grid p, .footer-grid h1{
-    color: black;
-    padding: 10px;
-}.footer-grid input{margin: 10px;}
-.footer-grid a{
-    color: black;
-    padding: 10px;
-}.footer-grid a:hover{color: rgb(80, 80, 80);}
+/*CONFIGURAÇÃO DAS FONTES DO FOOTER*/
+                            .footer-grid p, .footer-grid h1{
+                                color: black;
+                                padding: 10px;
+                            }.footer-grid input{margin: 10px; text-transform: none;}
 
-.footer-grid nav ul{
+                            .footer-grid a{
+                                color: black;
+                                padding: 10px;
+                            }.footer-grid a:hover{color: rgba(0, 0, 0, 0.6);}
+
+                            #footer2 p{
+                                text-transform: lowercase;
+                            }
+                            a#text-none-footer, p#text-none-footer{
+                                text-transform: none;
+                                color: rgba(0, 0, 0, 0.6);
+                            }
+                                #f1 h1, #f1 p, #f1 input, #f2 nav li a, #f3 nav ul li a, #f3 nav ul li a ul li a, #f4 nav ul li a{
+                                    font-size: 0.85em;
+                                }
+/*CONFIGURAÇÃO DOS DIVs DO FOOTER*/
+                            div#f1, div#f2, div#f3, div#f4{
+                                background: rgba(0, 0, 255, 0.322);
+                                padding: 40px;
+                                margin: 2px;
+                            }
+        /*CONFIG DA DIV ID=F1*/div#f1 div{
+                                    background: tomato;
+                                    padding: 10px;
+        }
+                                        div#f1 div h1{
+                                            background: blue;
+                                            margin: 5px;
+                                        }
+                                        div#f1 div p{
+                                            background: green;
+                                            margin: 5px;
+                                        }
+                                        div#f1 div input{
+                                            background: red;
+                                            margin: 5px;
+                                        }
+        /*CONFIG DA DIV ID=F2*/div#f2 nav{
+                                    background: tomato;
+                                    padding: 10px;
+        }
+                                        div#f2 nav ul{
+                                            background: blue;
+                                            padding: 10px;
+                                        }
+                                        div#f2 nav ul li{
+                                            background: green;
+                                            padding: 10px;
+                                            margin: 5px;
+                                        }
+        /*CONFIG DA DIV ID=F3*/div#f3 nav{
+                                    background: green;
+                                    padding: 10px 10px 10px 0px;
+                                }
+                                        div#f3 nav ul div#f3li{
+                                            background: tomato;
+                                            margin: 5px auto;
+                                            padding: 5px 5px 5px 0px;
+                                        }
+                                        div#f3 nav ul div#f3li li a{
+                                            padding-left: 0px;
+                                        }
+                                        div#f3 nav ul div#f3li li ul{
+                                            background: blue;
+                                            padding: 5px 5px 5px 0px;
+                                        }
+                                        div#f3 nav ul div#f3li li ul li{
+                                            background: red;
+                                            margin: 5px 5px 5px 0px;
+                                        }
+                                        div#f3 nav ul div#f3li li ul li a{
+                                            text-transform: capitalize;
+                                            padding-left: 0px;
+                                        }
+        /*CONFIG DA DIV ID=F4*/div#f4 nav{
+                                    background: red;
+                                    margin: 5px auto;
+                                    padding: 10px;
+                                }
+                                        div#f4 nav ul{
+                                            background: green;
+                                            padding: 5px;
+                                        }
+                                        div#f4 nav ul li{
+                                            background: tomato;
+                                            margin: 5px auto;
+                                        }
+/*
+div#f3 nav{
     display: flex;
     flex-wrap: wrap;
 }
-.footer-grid nav a{
+div#f3 nav a{
     display: block;
     padding: 5px;
     font-size: 1.125em;
 }
-.footer-grid li ul{
+div#f3 li ul{
     position: absolute;
     background-color: rgb(80, 80, 80);
     display: none;
     background: green;
 }
-.footer-grid li:hover ul, .footer-grid li.over ul{
+div#f3 li:hover ul, div#f3 li.over ul{
     display: block;
 }
-.footer-grid li ul li{
+div#f3 li ul li{
     display: block;
     width: 150px;
 }
+*/
+
 #footer2{
     display: flex;
     justify-content: space-between;
