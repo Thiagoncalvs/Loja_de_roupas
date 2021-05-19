@@ -39,28 +39,31 @@ img{
 .estrutura-geral-grid{/*GRID GERAL*/
     display: grid;
     grid-template-columns: minmax(160px, 1fr);
-    grid-template-rows: auto 1fr auto;  
+    grid-template-rows: 1fr auto;  
 }
 /*-------------------------------------------------------------------------------------
 //////////////////      HEADER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --------------------------------------------------------------------------------------*/
 /*CONFIGURAÇÃO DA LOGO*/.header-grid a.tlogo{
                             font-family: 'Fermow', Times, serif;
-                            font-size: 8em;
+                            font-size: 12em;
                             font-weight: normal;
-                            color: black;
+                            color: white;
                             text-transform: capitalize;
                             /* background: rgba(255, 0, 0, 0.452); */
                         }
 .header-grid{
     /* background: rgba(48, 4, 168, 0.596); */
     padding: 30px;
-    background: white;
+    background: rgba(255, 255, 255, 0);
     display: grid;
     grid-template-columns: 1fr auto auto;
     grid-template-rows: 1fr;
-    align-items: center;
+    align-items: flex-start;
     font-family: 'FermowGeral', Times, serif;
+    grid-area: 1/1;
+    z-index: 7;
+    box-shadow: inset 0em 20em 50em rgba(0, 0, 0, 0.700);
 }
 /* ////////////////////////////////////////////////////////////////  MENU1  /////////////////////*/
         .header-grid nav ul.menu1{
@@ -80,7 +83,7 @@ img{
                 .header-grid nav ul.menu1 li a{
                     display: block;
                     padding: 5px;
-                    color: black;
+                    color: white;
                     font-size: 0.8em;
                     font-family: "FermowGeral", Times, serif;
                     border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -88,7 +91,7 @@ img{
                     /* background: rgba(9, 0, 128, 0.527); */
                 }
                                 .header-grid nav ul.menu1 li a:hover{
-                                    border-bottom: 2px solid black;
+                                    border-bottom: 2px solid white;
                                 }
 
                 /*/////////CONFIGURAÇÃO DO SUBITEM DO MENU\\\\\\\\*/
@@ -110,7 +113,7 @@ img{
                     font-family: "FermowGeralPrincipal", Times, serif;
                     text-transform: capitalize;
                     font-size: 0.9em;
-                    color: black;
+                    color: white;
                     border-bottom: none;
                     transition: none;
                 }
@@ -138,7 +141,7 @@ img{
             .header-grid nav ul.menu2 li a{
                 display: block;
                 padding: 5px;
-                color: black;
+                color: white;
                 font-size: 1em;
                 /* background: rgba(255, 255, 0, 0.486); */
             }
@@ -164,7 +167,7 @@ img{
                 font-family: 'FermowGeralPrincipal', Times, serif;
                 font-size: 1em;
                 border: none;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid white;
                 background: rgba(0  , 0, 0, 0);
                 color: rgba(0, 0, 0, 0.7);
                 padding: 0px 0px 15px 0px;
