@@ -182,11 +182,14 @@ img{
     grid-auto-columns: 1fr;
     grid-template-rows: auto auto auto auto;
 }
-            section.section-main section.section1, section.section-main section.section2, section.section-main section.section3, section.section-main section.section4{
+            section.section-main section.section2, section.section-main section.section3, section.section-main section.section4{
                 background: lightblue;
                 margin-top: 5px;
                 margin-bottom: 5px;
             }
+                            section.section-main section.section1{
+                                margin-bottom: 5px;
+                            }
             section.section2{
                 display: grid;
                 grid-template-columns: 350px 1fr;
