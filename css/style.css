@@ -6,6 +6,7 @@
     font-family: 'FermowGeral', Times, serif;
     text-decoration: none;
     text-transform: uppercase;
+    /* outline: #2daebf dashed 1px; */
 }
 img{
     max-width: 100%;
