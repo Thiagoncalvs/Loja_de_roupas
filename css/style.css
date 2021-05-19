@@ -32,13 +32,14 @@ img{
 }
 
 /*-------------------------------------------------------------------------------------
-                              CONFIGURAÇÃO GERAL CSS      
+                              CONFIGURAÇÃO GERAL CSS
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////                             CONFIGURAÇÃO ESTRUTURAL HTML
 --------------------------------------------------------------------------------------*/
 
 .estrutura-geral-grid{/*GRID GERAL*/
     display: grid;
     grid-template-columns: minmax(160px, 1fr);
+    grid-template-rows: auto 1fr auto;  
 }
 /*-------------------------------------------------------------------------------------
 //////////////////      HEADER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -54,8 +55,10 @@ img{
 .header-grid{
     /* background: rgba(48, 4, 168, 0.596); */
     padding: 30px;
+    background: white;
     display: grid;
     grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr;
     align-items: center;
     font-family: 'FermowGeral', Times, serif;
 }
@@ -152,7 +155,7 @@ img{
                             }
             .header-grid nav ul.menu2 li ul li{
                 display: block;
-                width: 230px;                
+                width: 230px;
             }
             .header-grid nav ul.menu2 li ul li input{
                 margin-top: 15px;
@@ -174,14 +177,38 @@ img{
     background: white;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-rows: minmax(300px, 1fr) 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
             section.section-main section.section1, section.section-main section.section2, section.section-main section.section3, section.section-main section.section4{
                 background: lightblue;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
-
+            section.section2{
+                display: grid;
+                grid-template-columns: 350px 1fr;
+                grid-template-rows: 1fr;
+            }
+                        .area-text{
+                            background: red;
+                        }
+                        .area-slide{
+                            background: green;
+                        }
+            section.section3{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 2fr 2fr 2fr 1.5fr 1fr;
+            }
+                        #snone{
+                            background: red;
+                            margin: 10px;
+                            opacity: 0;
+                        }
+                        #painel{
+                            background: red;
+                            margin: 10px;
+                        }
 /*-------------------------------------------------------------------------------------
 //////////////////      FOOTER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --------------------------------------------------------------------------------------*/
@@ -231,7 +258,7 @@ img{
                                         div#f1 div p{
                                             /* background: green; */
                                             padding: 0px 0px 20px 0px;
-                                            
+
                                         }
                                             div#f1 div p#solo{
                                                 text-transform: none;
@@ -349,7 +376,7 @@ img{
                                 /* background: violet; */
                             }
 /*-------------------------------------------------------------------------------------
-                              CONFIGURAÇÃO ESTRUTURAL HTML      
+                              CONFIGURAÇÃO ESTRUTURAL HTML
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////                             CONFIGURAÇÃO DIRECIONADA AO JS
 --------------------------------------------------------------------------------------*/
 
