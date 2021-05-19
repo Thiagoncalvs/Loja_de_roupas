@@ -177,7 +177,7 @@ img{
     background: white;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
 }
             section.section-main section.section1, section.section-main section.section2, section.section-main section.section3, section.section-main section.section4{
                 background: lightblue;
@@ -191,23 +191,38 @@ img{
             }
                         .area-text{
                             background: red;
+                            height: 500px;
                         }
                         .area-slide{
                             background: green;
                         }
             section.section3{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 2fr 2fr 2fr 1.5fr 1fr;
+                position: relative;
             }
-                        #snone{
-                            background: red;
-                            margin: 10px;
-                            opacity: 0;
+                        section.section3 div.menuzinho1{
+                            background: white;
+                            position: absolute;
+                            margin: 0px;
+                            padding: 30px 20px 20px 20px;
+                            bottom: 6.5%;
+                            right: auto;
+                            left: 35%;
+                            width: 400px;
+                            height: 100px;
+                            border-radius: 3px;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            text-align: center;
                         }
-                        #painel{
-                            background: red;
-                            margin: 10px;
+                        div.menuzinho1 a{
+                            color: black;
+                            font-family: "FermowGeral", Times, serif;
+                        }
+                        div.menuzinho1 a#aPrincipal{
+                            color: black;
+                            font-size: 1.3em;
+                            font-family: "FermowGeral", Times, serif;
                         }
 /*-------------------------------------------------------------------------------------
 //////////////////      FOOTER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
