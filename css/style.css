@@ -40,22 +40,14 @@ img{
 .estrutura-geral-grid{/*GRID GERAL*/
     display: grid;
     grid-template-columns: minmax(160px, 1fr);
-    grid-template-rows: 1fr auto;  
+    grid-template-rows: 1fr auto;
 }
 /*-------------------------------------------------------------------------------------
 //////////////////      HEADER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --------------------------------------------------------------------------------------*/
-/*CONFIGURAÇÃO DA LOGO*/.header-grid a.tlogo{
-                            font-family: 'Fermow', Times, serif;
-                            font-size: 12em;
-                            font-weight: normal;
-                            color: white;
-                            text-transform: capitalize;
-                            /* background: rgba(255, 0, 0, 0.452); */
-                        }
 .header-grid{
     /* background: rgba(48, 4, 168, 0.596); */
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
     background: rgba(255, 255, 255, 0);
     display: grid;
     grid-template-columns: 1fr auto auto;
@@ -66,6 +58,20 @@ img{
     z-index: 7;
     box-shadow: inset 0em 20em 50em rgba(0, 0, 0, 0.700);
 }
+
+        .centralizador-menu-header{
+            display: flex;
+            padding: 5px;
+            align-items: center;
+        }
+        .header-grid a.tlogo{               /*CONFIGURAÇÃO DA LOGO*/
+            font-family: 'Fermow', Times, serif;
+            font-size: 12em;
+            font-weight: normal;
+            color: white;
+            text-transform: capitalize;
+            /* background: rgba(255, 0, 0, 0.452); */
+        }
 /* ////////////////////////////////////////////////////////////////  MENU1  /////////////////////*/
         .header-grid nav ul.menu1{
             display: flex;
@@ -85,7 +91,7 @@ img{
                     display: block;
                     padding: 5px;
                     color: white;
-                    font-size: 0.8em;
+                    font-size: 0.9em;
                     font-family: "FermowGeral", Times, serif;
                     border-bottom: 2px solid rgba(0, 0, 0, 0);
                     transition: 0.5s;
@@ -113,7 +119,7 @@ img{
                 .header-grid nav ul.menu1 li ul li a{
                     font-family: "FermowGeralPrincipal", Times, serif;
                     text-transform: capitalize;
-                    font-size: 0.9em;
+                    font-size: 1em;
                     color: white;
                     border-bottom: none;
                     transition: none;
@@ -129,11 +135,11 @@ img{
             display: flex;
             flex-wrap: wrap;
             /* background: rgba(128, 0, 0, 0.575); */
-            margin-left: 130px;
+            margin-left: 80px;
         }
 /*--------------------------------------------------------*/
                 .header-grid nav ul.menu2 li + li{
-                    margin-left: 45px;
+                    margin-left: 35px;
                 }
 .header-grid nav ul.menu2 li{
     /* background: rgba(255, 255, 0, 0.404); */
@@ -189,10 +195,10 @@ img{
     grid-auto-columns: 1fr;
     grid-template-rows: auto auto auto auto;
 }
-            section.section-main section.section2, section.section-main section.section4{
+            section.section-main section.section2{
                 background: lightblue;
-                margin-top: 5px;
-                margin-bottom: 5px;
+                margin-top: 65px;
+                margin-bottom: 65px;
             }
                             section.section-main section.section1{
                                 margin-bottom: 5px;
@@ -204,7 +210,16 @@ img{
             }
                         .area-text{
                             background: white;
+                            display: flex;
+                            align-items: center;
                         }
+                                .area-text .text-section2{
+                                    display: grid;
+                                }
+                                    .area-text h1{
+                                        margin: 5px;
+                                        font-size: 1.2em;
+                                    }
                         .area-slide2{
                             background: white;
                             position: relative;
@@ -213,45 +228,61 @@ img{
                         }
                         div.text-section2{
                             display: inline-block;
-                            width: 50px;
-                            padding: 10px;
-                            margin: 10px;
+                            background: rgba(173, 216, 230, 0);
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                            text-align: center;
                         }
                         div.text-section2 a{
-                            background: blue;
+                            color: black;
                             height: 20px;
-                            text-align: center;
                         }
-            section.section3{
-                position: relative;
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-                        section.section3 div.menuzinho1{
-                            background: white;
-                            position: absolute;
-                            margin: 0px;
-                            padding: 30px 20px 20px 20px;
-                            bottom: 6.5%;
-                            right: auto;
-                            left: 35%;
-                            width: 400px;
-                            height: 100px;
-                            border-radius: 3px;
-                            display: grid;
-                            grid-template-columns: 1fr;
-                            grid-template-rows: 1fr 1fr;
-                            text-align: center;
-                        }
-                        div.menuzinho1 a{
-                            color: black;
-                            font-family: "FermowGeral", Times, serif;
-                        }
-                        div.menuzinho1 a#aPrincipal{
-                            color: black;
-                            font-size: 1.3em;
-                            font-family: "FermowGeral", Times, serif;
-                        }
+                section.section3{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: minmax(850px, 1fr);
+                    background-color: rgba(102, 255, 0, 0.363);
+                    /* padding: 10px; */
+                }
+                .conteudoS3{
+                    display: flex;
+                    align-items: flex-end;
+                    background: url(/IMG/ROUPAS/slide1.png) no-repeat top;
+                    box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
+                    background-size: cover;
+                    padding: 50px;
+                }
+                .textS3{
+                    display: flex;
+                    /* padding: 10px; */
+                    background: rgba(255, 99, 71, 0);
+                    width: 100%;
+                    height: 100px;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .textS3 .menuzinho{
+                    background: white;
+                    width: 400px;
+                    height: 100px;
+                    display: grid;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: 3px;
+                }
+                .menuzinho a, .menuzinho h1{
+                    color: black;
+                }
+        .section4{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(850px, 1fr);
+            background: url(/IMG/ROUPAS/slide3.png) no-repeat top;
+            box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
+            background-size: cover;
+        }
 /*-------------------------------------------------------------------------------------
 //////////////////      FOOTER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --------------------------------------------------------------------------------------*/
