@@ -6,7 +6,7 @@
     font-family: 'FermowGeral', Times, serif;
     text-decoration: none;
     text-transform: uppercase;
-    /* outline: #2daebf dashed 1px; */
+    outline: #2daebf dashed 1px;
 }
 img{
     max-width: 100%;
@@ -45,19 +45,7 @@ img{
 /*-------------------------------------------------------------------------------------
 //////////////////      HEADER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --------------------------------------------------------------------------------------*/
-.header-grid{
-    /* background: rgba(48, 4, 168, 0.596); */
-    padding: 10px 30px 30px 30px;
-    background: rgba(255, 255, 255, 0);
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: 1fr;
-    align-items: flex-start;
-    font-family: 'FermowGeral', Times, serif;
-    grid-area: 1/1;
-    z-index: 7;
-    box-shadow: inset 0em 20em 50em rgba(0, 0, 0, 0.700);
-}
+
 
         .centralizador-menu-header{
             display: flex;
@@ -68,7 +56,7 @@ img{
             font-family: 'Fermow', Times, serif;
             font-size: 12em;
             font-weight: normal;
-            color: white;
+            color: black;
             text-transform: capitalize;
             /* background: rgba(255, 0, 0, 0.452); */
         }
@@ -90,7 +78,7 @@ img{
                 .header-grid nav ul.menu1 li a{
                     display: block;
                     padding: 5px;
-                    color: white;
+                    color: black;
                     font-size: 0.9em;
                     font-family: "FermowGeral", Times, serif;
                     border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -98,7 +86,7 @@ img{
                     /* background: rgba(9, 0, 128, 0.527); */
                 }
                                 .header-grid nav ul.menu1 li a:hover{
-                                    border-bottom: 2px solid white;
+                                    border-bottom: 2px solid black;
                                 }
 
                 /*/////////CONFIGURAÇÃO DO SUBITEM DO MENU\\\\\\\\*/
@@ -120,7 +108,7 @@ img{
                     font-family: "FermowGeralPrincipal", Times, serif;
                     text-transform: capitalize;
                     font-size: 1em;
-                    color: white;
+                    color: black;
                     border-bottom: none;
                     transition: none;
                 }
@@ -148,7 +136,7 @@ img{
             .header-grid nav ul.menu2 li a{
                 display: block;
                 padding: 5px;
-                color: white;
+                color: black;
                 font-size: 1em;
                 /* background: rgba(255, 255, 0, 0.486); */
             }
@@ -180,9 +168,9 @@ img{
                 font-family: 'FermowGeralPrincipal', Times, serif;
                 font-size: 1em;
                 border: none;
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid black;
                 background: rgba(0  , 0, 0, 0);
-                color: white;
+                color: black;
                 padding: 0px 0px 15px 0px;
             }
 
@@ -210,15 +198,26 @@ img{
             }
                         .area-text{
                             background: white;
-                            display: flex;
+                            display: grid;
                             align-items: center;
                         }
                                 .area-text .text-section2{
+                                    /* background: red; */
+                                    height: 100px;
+                                    width: 100%;
                                     display: grid;
+                                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                                    align-items: center;
                                 }
                                     .area-text h1{
-                                        margin: 5px;
                                         font-size: 1.2em;
+                                        /* background: lightblue; */
+                                        grid-row: 3;
+                                    }
+                                    .area-text a{
+                                        font-size: 1.2em;
+                                        /* background: lightblue; */
+                                        grid-row: 2;
                                     }
                         .area-slide2{
                             background: white;
@@ -240,49 +239,79 @@ img{
                         }
                 section.section3{
                     display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: minmax(850px, 1fr);
-                    background-color: rgba(102, 255, 0, 0.363);
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: minmax(750px, 1fr);
+                    background: url(/IMG/ROUPAS/slide2.png) no-repeat top;
+                    box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
+                    background-size: cover;
                     /* padding: 10px; */
                 }
                 .conteudoS3{
+                    /* background: white; */
+                    grid-column: 2;
                     display: flex;
                     align-items: flex-end;
-                    background: url(/IMG/ROUPAS/slide1.png) no-repeat top;
-                    box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
-                    background-size: cover;
-                    padding: 50px;
                 }
-                .textS3{
-                    display: flex;
-                    /* padding: 10px; */
-                    background: rgba(255, 99, 71, 0);
+                .menuzinho{
+                    background: white;
                     width: 100%;
                     height: 100px;
-                    align-items: center;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                }
-                .textS3 .menuzinho{
-                    background: white;
-                    width: 400px;
-                    height: 100px;
                     display: grid;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
                     align-items: center;
                     text-align: center;
                     border-radius: 3px;
+                    margin-bottom: 10%;
                 }
-                .menuzinho a, .menuzinho h1{
+                .menuzinho a{
                     color: black;
+                    grid-row: 2;
+                }
+                .menuzinho h1{
+                    color: black;
+                    grid-row: 3;
                 }
         .section4{
             display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: minmax(850px, 1fr);
-            background: url(/IMG/ROUPAS/slide3.png) no-repeat top;
-            box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: minmax(300px, 1fr) 1fr 1fr;
+            background: url(/IMG/ROUPAS/slide1.png) no-repeat top;
+            box-shadow: inset 0em 5em 30em rgba(0, 0, 0, 0.700);
             background-size: cover;
         }
+                .section4 #slide4{
+                    /* background: lightblue; */
+                    grid-column: 2;
+                    grid-row: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .section4 #slide4 nav{
+                    /* background: tomato; */
+                    padding: 5px;
+                }
+                .section4 #slide4 nav ul{
+                    /* background: lightgreen; */
+                    padding: 5px;
+                }
+                .section4 #slide4 nav ul li{
+                    margin: 20px;
+                    /* background: red; */
+                    padding: 5px;
+                    text-align: center;
+                }
+                .section4 #slide4 nav ul li a{
+                    /* background: lightseagreen; */
+                    font-size: 1.8em;
+                    color: white;
+                }
+                .section4 #slide4 nav ul li:hover a{
+                    color: white !important;
+                }
+                .section4 #slide4 nav ul:hover li a{
+                    color: rgba(255, 255, 255, 0.500);
+                } 
 /*-------------------------------------------------------------------------------------
 //////////////////      FOOTER      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --------------------------------------------------------------------------------------*/
@@ -464,11 +493,15 @@ section.section-main section.section1 div.slide1{
     max-width: 100%;
     margin: auto;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
                                     /* ESCONDENDO OS ITENS */
             .slide-itens{
                 position: relative;
-                grid-area: 1/1;
+                grid-area: 1;
+                grid-row: 3/3;
+                grid-column: 1;
                 display: grid;
             }
                     .slide-itens > *{
@@ -483,20 +516,38 @@ section.section-main section.section1 div.slide1{
                         position: relative;
                     }
             .slide-nav{
-                grid-area: 1/1;
-                z-index: 1;
+                grid-area: 3/3;
+                z-index: 7;
+                grid-column: 1;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto 1fr;
+                justify-content: stretch;
+            }
+            .header-grid{
+                /* background: rgba(48, 4, 168, 0.596); */
+                padding: 10px 30px 30px 30px;
+                background: rgba(190, 23, 23, 0.603);
+                display: grid;
+                align-self: start;
+                grid-template-columns: 1fr auto auto;
+                grid-template-rows: 1fr;
+                align-items: flex-start;
+                font-family: 'FermowGeral', Times, serif;
+                grid-column: 1/4;
+                grid-row: 1/4;    
+                z-index: 6;
             }
             .slide-nav button{
                 -webkit-appearance: none;
                 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-                opacity: 0;
+                align-self: stretch;
+                opacity: 1;
             }
                     .slide-thumb{
                         display: flex;
-                        grid-column: 1 / 3;
+                        grid-column: 1 / 4;
+                        grid-row: 1/4;
                     }
                             .slide-thumb > span{
                                 flex: 1;
