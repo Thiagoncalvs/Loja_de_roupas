@@ -182,10 +182,7 @@ img{
             padding: 0;
             background: rgba(179, 19, 19, 0);
             box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
-            /* display: grid; */
             /* align-self: start; */
-            /* grid-template-columns: 1fr auto auto; */
-            /* grid-template-rows: 1fr; */
             align-items: flex-start;
             font-family: 'FermowGeral', Times, serif;  
             z-index: 6;
