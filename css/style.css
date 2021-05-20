@@ -252,7 +252,7 @@ img{
                 grid-column: 2;
                 grid-row: 3;
 
-                z-index: 5;
+                z-index: 7;
                 background: white;
                 border-radius: 3px;
                 padding: 0;
@@ -273,7 +273,7 @@ img{
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr;
                     height: 0;
-                    position: relative;
+                    /* position: relative; */
                 }
                         .slide-thumb > span{
                             /* flex: 1; */
@@ -306,12 +306,13 @@ img{
                         /* align-self: stretch; */
                         background: rgba(0, 0, 0, 0);
                         border: rgba(0, 0, 0, 0);
-                        grid-column: 2;
+                        grid-column: 1;
                         grid-row: 2;
                         height: 10px;
-                        position: absolute;
-                        bottom: 10%;
-                        left: 45%;
+                        z-index: 7;
+                        /* position: absolute; */
+                        /* bottom: 10%; */
+                        /* left: 45%; */
                     }
                     .slide-nav button.slide-next{
                         -webkit-appearance: none;
@@ -319,12 +320,13 @@ img{
                         /* align-self: stretch; */
                         background: rgba(0, 0, 0, 0);
                         border: rgba(137, 43, 226, 0);
-                        grid-column: 3;
+                        grid-column: 4;
                         grid-row: 2;
                         height: 10px;
-                        position: absolute;
-                        bottom: 10%;
-                        right: 45%;
+                        z-index: 7;
+                        /* position: absolute; */
+                        /* bottom: 10%; */
+                        /* right: 45%; */
                     }
                     .subTituloNav-section1{
                         grid-column: 1 / -1;
