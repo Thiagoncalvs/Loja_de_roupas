@@ -398,7 +398,7 @@ img{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: minmax(750px, 1fr);
-        background: url(/IMG/ROUPAS/slide2.png) no-repeat top;
+        background: url(../IMG/ROUPAS/slide2.png) no-repeat top;
         box-shadow: inset 0em 3em 30em rgba(0, 0, 0, 0.700);
         background-size: cover;
         /* padding: 10px; */
@@ -433,7 +433,7 @@ img{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: minmax(300px, 1fr) 1fr 1fr;
-        background: url(/IMG/ROUPAS/slide1.png) no-repeat top;
+        background: url(../IMG/ROUPAS/slide1.png) no-repeat top;
         box-shadow: inset 0em 5em 30em rgba(0, 0, 0, 0.700);
         background-size: cover;
     }
