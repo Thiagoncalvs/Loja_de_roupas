@@ -170,7 +170,7 @@ img{
 }
     section.section-main section.section1{
         margin-bottom: 5px;
-        background: #2daebf;
+        background: white;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -346,7 +346,7 @@ img{
                 
 
     section.section-main section.section2{
-        background: lightblue;
+        background: white;
         margin-top: 65px;
         margin-bottom: 65px;
         display: grid;
@@ -356,15 +356,25 @@ img{
                         .area-text{
                             background: white;
                             display: grid;
-                            align-items: center;
+                            /* align-items: flex-start; */
+                        }
+                        [data-animeSection2End="End-Start"].animeiteEnd{
+                            align-items: flex-end;
                         }
                                 .area-text .text-section2{
-                                    /* background: red; */
+                                    background: red;
                                     height: 100px;
                                     width: 100%;
                                     display: grid;
                                     grid-template-rows: 1fr 1fr 1fr 1fr;
                                     align-items: center;
+                                }
+                                [data-animeSection2Sticky="sticky"].animeiteSticky{
+                                    position: fixed;
+                                    max-width: 350px;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
                                 }
                                     .area-text a.TituloNav-section2{
                                         font-size: 1.2em;

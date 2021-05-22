@@ -127,3 +127,70 @@ class Slide2Stories{
 }
 
     new Slide2Stories('area-slide2')
+
+// ANIMAÇÃO DOS MENUZINHOS 
+
+
+
+const target = document.querySelectorAll('[data-animeSection2Sticky]')
+const animationClassSticky = 'animeiteSticky'
+
+// const topojanela = window.pageYOffset
+
+// const windowTop = window.pageYOffset + 612.9
+
+function animeSectionScroll(){
+
+    // const windowTop = window.pageYOffset + 612.9;
+
+    const thiago = window.pageYOffset + ((window.innerHeight * 3) / 4);
+
+    target.forEach(function(element){
+        if ((windowTop) > element.offsetTop) {
+            element.classList.add(animationClassSticky)
+        }else if ((windowTop) < element.offsetTop) {
+            element.classList.remove(animationClassSticky)
+        }
+    })
+}
+
+animeSectionScroll()
+
+if (target.length) {
+    window.addEventListener('scroll', function(){
+        animeSectionScroll()
+    })   
+}
+
+
+
+///////////////////////////////////////////////////
+/*
+const target2 = document.querySelectorAll('[data-animeSection2End]')
+const animationClassEnd = 'animeiteEnd'
+
+function animeSection2Scroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3.5) / 4)
+    target2.forEach(function(element2){
+        if ((windowTop) > element2.offsetTop) {
+            element2.classList.add(animationClassEnd)
+        }else{
+            element2.classList.remove(animationClassEnd)
+        }
+    })
+}
+
+animeSection2Scroll()
+
+if (target2.length) {
+    window.addEventListener('scroll', function(){
+        animeSection2Scroll()
+    })   
+}
+*/
+
+var testethiago = 6
+
+function testeee() {
+
+}
