@@ -131,7 +131,7 @@ class Slide2Stories{
 // ANIMAÇÃO DOS MENUZINHOS 
 
 
-
+/*
 const target = document.querySelectorAll('[data-animeSection2Sticky]')
 const animationClassSticky = 'animeiteSticky'
 
@@ -155,3 +155,22 @@ if (target.length) {
         animeSectionScroll()
     })   
 }
+
+*/
+
+
+
+
+const target = document.querySelectorAll('[data-animeSection2Sticky]')
+const animationClassSticky = 'animeiteSticky'
+
+
+    var $windowTop = window.pageYOffset
+    
+    target.forEach(function(elementoo){
+        console.log(elementoo.offsetTop)
+    })
+
+    window.addEventListener('scroll', function () {
+        console.log($windowTop)
+    })
