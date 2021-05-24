@@ -195,7 +195,7 @@ img{
                 .centralizador-menu-header:hover{
                     background: white;
                     align-items: flex-start;
-                    transition: 1s;
+                    transition: 0.3s;
                     height: 50%;
                     z-index: 7;
                 }
@@ -355,25 +355,16 @@ img{
                         .area-text{
                             background: white;
                             display: grid;
-                            /* align-items: flex-start; */
-                        }
-                        [data-animeSection2End="End-Start"].animeiteEnd{
-                            align-items: flex-end;
                         }
                                 .area-text .text-section2{
-                                    background: red;
+                                    background: white;
                                     height: 100px;
                                     width: 100%;
                                     display: grid;
                                     grid-template-rows: 1fr 1fr 1fr 1fr;
                                     align-items: center;
-                                }
-                                [data-animeSection2Sticky="sticky"].animeiteSticky{
-                                    position: fixed;
-                                    max-width: 350px;
-                                    top: 50%;
-                                    left: 0;
-                                    transform: translateY(-50%);
+                                    position: sticky;
+                                    top: 45%;
                                 }
                                     .area-text a.TituloNav-section2{
                                         font-size: 1.2em;
@@ -416,19 +407,21 @@ img{
                     /* background: white; */
                     grid-column: 2;
                     display: flex;
-                    align-items: flex-end;
                 }
                 .menuzinho{
                     background: white;
                     width: 100%;
-                    height: 100px;
+                    height: 125px;
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: 3fr 1fr 1fr 1fr;
                     align-items: center;
                     text-align: center;
                     border-radius: 3px;
+                    margin-top: 10%;
                     margin-bottom: 10%;
+                    position: sticky;
+                    top: 70%;
                 }
                 .menuzinho a.subTituloNav-section3{
                     color: black;
@@ -446,6 +439,7 @@ img{
         box-shadow: inset 0em 5em 30em rgba(0, 0, 0, 0.700);
         background-size: cover;
     }
+
                 .section4 #slide4{
                     /* background: lightblue; */
                     grid-column: 2;
