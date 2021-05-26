@@ -7,7 +7,8 @@
     font-family: 'FermowGeral', Times, serif;
     text-decoration: none;
     text-transform: uppercase;
-    /* outline: #2daebf dashed 1px; */
+    outline: #2daebf dashed 1px;
+    opacity: 1;
 }
 @font-face {
     font-family: "Fermow";
@@ -35,14 +36,17 @@
 
 .estrutura-geral-grid{/*GRID GERAL*/
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100vw;
     grid-template-rows: auto auto;
 }
     .section-main{/*SECTION*/
         background: white;
         display: grid;
-        grid-auto-columns: 100vw;
+        grid-auto-columns: 100%;
         grid-template-rows: 100vh 100vh 100vh 100vh;
+    }
+    .section-main section{
+        margin-bottom: 100px;
     }
         .header-grid{
             width: 100vw;
@@ -217,7 +221,7 @@ background: none;
             grid-column: 1;
             grid-row: 1;
             /* background: rgb(255, 0, 0); */
-            overflow: hidden;
+            /* overflow: hidden; */
         }
             .slide-itens{
                 grid-row: 1 / -1;
@@ -337,19 +341,19 @@ background: none;
                 
 
     section.section-main section.section2{
-        background: white;
+        background: rgb(233, 114, 114);
         margin-top: 65px;
         margin-bottom: 65px;
         display: grid;
         grid-template-columns: 350px 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 100vh;
     }
     section.section-main section.section2 .area-text{
                             background: white;
                             display: grid;
                         }
                         section.section-main section.section2 .area-text .text-section2{
-                                    background: white;
+                                    background: rgb(50, 21, 175);
                                     height: 100px;
                                     width: 100%;
                                     display: grid;
@@ -383,16 +387,23 @@ background: none;
                                     }
                         .area-slide2{
                             /* border: 2px solid black; */
+                            background: rgba(144, 238, 144, 0.267);
                             width: auto;
                             height: auto;
-                            overflow: hidden;
+                            margin: 0;
+                            /* overflow: hidden; */
                         }
                             .area-slide2 .slide2-itens{
+                                /* position: relative; */
                                 display: flex;
+                                flex-wrap: nowrap;
                                 animation-name: translacao;
                                 animation-duration: 80s;
                                 animation-timing-function: linear;
                                 animation-iteration-count: infinite;
+                                background: red;
+                                /* width: 5000px; */
+                                /* min-height: 100vh; */
                             }
                                 @keyframes translacao {
                                     to{
@@ -401,8 +412,8 @@ background: none;
                                 }
                                 .area-slide2 .slide2-itens img{
                                     margin-right: 5px;
-                                    width: 100vw;
-                                    height: 100vh;
+                                    /* width: auto; */
+                                    /* height: 600px; */
                                     display: block;
                                     transform: translateY(-10%);
                                 }
